@@ -1,0 +1,72 @@
+.recetas {
+  background: pink;
+  /* background: #e5e5e5; */
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5rem 0 0 5rem;
+}
+/* -----para cada tarjeta de receta----- */
+.receta {
+  background: #fdfdfd;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5rem;
+  margin-right: 5rem;
+  /* acomodar bien los espacios de cada tarjeta de receta */
+  width: calc(25% - 5rem);
+}
+
+.receta__imagen {
+  height: 150px;
+}
+
+.receta__contenido {
+  padding: 0.6rem;
+  text-align: center;
+}
+
+.receta__titulo {
+  font-size: 1.2rem;
+  text-align: center; /* Poder centrar el boton */
+}
+
+.receta__descripcion {
+  font-size: 1rem;
+  line-height: 1.1;
+  text-align: justify;
+}
+
+.receta__boton {
+  background: #8d0606;
+  border: none;
+  border-radius: 5px;
+  color: #fdfdfd;
+  padding: 0.7rem;
+}
+
+/* --------------- Responsive para dispositivos en pantallas entre 320px y 480px------------------ */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .receta {
+    margin-right: 1rem;
+    /* acomodar bien los espacios de cada tarjeta de receta */
+    width: 260px;
+  }
+  .recetas {
+    flex-direction: column;
+    align-items: center;
+    padding: 5rem 0 0 1rem;
+  }
+}
+
+/* --------------- Responsive para dispositivos en pantallas entre 481px y 768px------------------ */
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .receta {
+    margin-right: auto;
+    margin-left: auto;
+    /* acomodar bien los espacios de cada tarjeta de receta */
+    width: 250px;
+  }
+  .recetas {
+    padding: 5rem 0 0 2.5rem;
+  }
+}
